@@ -4,17 +4,48 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    padding-bottom: 80px; /* 为固定页脚留出空间 */
+    padding-top: 100px; /* 为顶部固定元素留出空间 */
 }
 
-.search-container {
+/* 商品容器与顶部保持一定距离 */
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: 20px auto 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* 顶部固定区域 */
+.top-fixed-section {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: white;
-    padding: 15px 20px;
+    background-color: #fff;
+    z-index: 1001;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+}
+
+/* 网站标题样式 */
+.header {
+    text-align: center;
+    padding: 5px 0 0 0;
+    background-color: #fff;
+}
+
+.website-title {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+}
+
+.search-container {
+    padding: 5px 20px 5px 20px;
     box-sizing: border-box;
 }
 
@@ -33,10 +64,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    .search-container {
-        padding: 10px;
-    }
-    
     .search-input {
         padding: 10px 15px;
         font-size: 14px;
@@ -45,10 +72,6 @@ body {
 }
 
 @media (max-width: 480px) {
-    .search-container {
-        padding: 8px;
-    }
-    
     .search-input {
         padding: 8px 12px;
         font-size: 14px;
@@ -67,8 +90,8 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
     max-width: 1200px;
-    margin: 100px auto 0;
-    padding: 20px;
+    margin: 0 auto;
+    padding: 10px;
     box-sizing: border-box;
 }
 
@@ -332,4 +355,26 @@ body {
         font-size: 28px;
         top: -25px;
     }
+    
+    .website-title {
+        font-size: 24px;
+    }
+}
+
+/* 联系信息页脚样式 */
+.contact-info {
+    text-align: center;
+    padding: 5px; /* 减小页脚内边距 */
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.contact-info p {
+    margin: 1px 0; /* 减小段落间距 */
 }

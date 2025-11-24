@@ -1,6 +1,14 @@
-# Goods Project
+# BAHO TRADE Product Display Website
 
-This project displays products in a grid layout with search functionality and image modal viewing.
+This is a website for displaying products with grid layout, search functionality, and image modal viewer.
+
+## Project Features
+
+- Responsive design that adapts to various device screen sizes
+- Fixed header with website title and search box
+- Fixed footer with contact information
+- Products displayed in a grid layout with search by product ID or name
+- Click on products to view larger images and details
 
 ## Project Structure
 
@@ -17,7 +25,7 @@ This project displays products in a grid layout with search functionality and im
 - Thumbnail (displayed in product list): `image1.jpg`
 - Additional images (displayed in modal): `image2.jpg`, `image3.jpg`, etc.
 
-## How to Add New Product Images
+## How to Add New Products
 
 1. Create a new folder in the `images` directory with the product ID as the name
 2. Place product images in that folder
@@ -77,6 +85,12 @@ All product information is stored in the `js/products.js` file. Each product obj
     }
 }
 ```
+
+## Contact Information
+
+- Phone: 0788707930
+- Email: ruziganab@gmail.com
+- Address: Rwanda Muhanga Center City
 
 ## Important Notes
 

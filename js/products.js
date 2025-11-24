@@ -94,8 +94,7 @@ const products = [
         id: "P008",
         name: "Fitbit Charge 5 Fitness Tracker",
         images: [
-            "images/P008/image1.jpg",
-            "images/P008/image2.jpg"
+            "images/P008/image1.jpg"
         ],
         thumbnail: "images/P008/image1.jpg",
         prices: {
