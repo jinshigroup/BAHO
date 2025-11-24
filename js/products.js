@@ -10,7 +10,7 @@ const products = [
         thumbnail: "images/P001/image1.jpg",
         prices: {
             kigali: "183,600 RF",
-            muhanga: "204,000 RF"
+            muhanga: "304,000 RF"
         }
     },
     {
